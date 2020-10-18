@@ -6,6 +6,8 @@ Do you like automation?! So do we!
 
 Check any command success through `git sign-off` calls in your git pre-commit hooks. On your CI, check that they are up-to-date with a simple `git sign-off-check`.
 
+This way you can even ensure your fellow developers have their hooks installed and running correctly for instance.
+
 # Installation
 
 ```bash
@@ -36,6 +38,8 @@ Useful in CI or for other developers:
 ```bash
 git sign-off-check
 ```
+If your certificate is up-to-date you will see:
+> Signature check for task 'default' passed.
 
 If your certificate is not up-to-date you will have an error like:
 >SignatureError: Outdated signature found. Latest signature was generated after commit:
