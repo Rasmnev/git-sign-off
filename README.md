@@ -6,7 +6,7 @@ Do you like automation?! So do we!
 
 Check any command success through `git sign-off` calls in your git pre-commit hooks. On your CI, check that they are up-to-date with a simple `git sign-off-check`.
 
-This way you can even ensure your fellow developers have their hooks installed and running correctly for instance.
+This way you can even ensure your fellow developers have their hooks installed and running correctly.
 
 # Installation
 
