@@ -5,6 +5,7 @@ setup(
     version="0.1.0",
     description="Sign off git certificates for tasks and check them.",
     author="Alberto Ferreira",
+    author_email="AlbertoEAF@users.noreply.github.com",
     packages=find_packages(exclude=["tests"]),
     python_requires=">=3.6",
     entry_points={

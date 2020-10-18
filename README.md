@@ -1,37 +1,37 @@
 # git-sign-off
 
-This package serves to add and check git signatures to your repository.
+Add and check git signatures to your repository to check conditions/tasks automatically.
 
-This is useful when you want to add a certificate that certain command passed successfully
-at a certain point of you repo timeline.
+Do you like automation?! So do we!
 
-To automate such processes add a `git sign-off` command to your git pre-commit hooks, and on your CI check that they are up-to-date with a simple `git sign-off-check`.
+Check any command success through `git sign-off` calls in your git pre-commit hooks. On your CI, check that they are up-to-date with a simple `git sign-off-check`.
 
 # Installation
 
-Just do it:
 ```bash
 pip install git-sign-off
 ```
 
-This installs two utilities `git-sign-off` and `git-sign-off-check` which you can use directly or through `git`'s command line.
+This installs programs `git-sign-off` and `git-sign-off-check`. Use them directly or through git commands.
 
 # Usage
 
 
-## Generate certificate
+### Create certificate
 
-Let's say you want your developers to prove they executed a piece of code locally. Run this:
+Prove that a command ran successfully locally through:
 
 ```bash
 git sign-off -c bash <run_my_local_sensitive_test.sh>
 ```
 
-If the "challenge" command executes successfully a certificate is added to your commit and you see this message:
+If the "challenge" command executes successfully a certificate is added to your commit. You will then see the message:
 > Added git-sign-off signature for task 'default'.
 
 
-## Check certificate
+### Check certificate
+
+Useful in CI or for other developers:
 
 ```bash
 git sign-off-check
