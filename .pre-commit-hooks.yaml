@@ -1,0 +1,5 @@
+- id: git-sign-off
+  name: Add signature to commits
+  description: Ensure that a command runs successfully and sign the commit
+  entry: git sign-off
+  language: python
