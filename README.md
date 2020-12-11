@@ -49,7 +49,8 @@ If your certificate is not up-to-date you will have an error like:
 # Using pre-commit
 
 An easy way to use **git-sign-off** is through [`pre-commit`](https://pre-commit.com/) hooks. 
-To use it first install pre-commit
+
+To use it first install pre-commit:
 
 ```bash
 pip install pre-commit
