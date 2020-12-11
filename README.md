@@ -46,4 +46,22 @@ If your certificate is not up-to-date you will have an error like:
 >5c1537d3502b8bc17172b5a03a4531b010024754
 
 
+# Using pre-commit
 
+An easy way to use **git-sign-off** is through [`pre-commit`](https://pre-commit.com/) hooks. 
+To use it first install pre-commit
+
+```bash
+pip install pre-commit
+```
+
+Then add a file named `.pre-commit-config.yaml` to your repo with the hook:
+
+```yml
+repos:
+-   repo: https://github.com/AlbertoEAF/git-sign-off
+    rev: master
+    hooks:
+    -   id: git-sign-off
+        args: ["-c", "bash", "<run_my_local_sensitive_test.sh>"]
+```
